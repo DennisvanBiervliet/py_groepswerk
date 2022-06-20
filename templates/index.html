@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Capture{% endblock %}
+
+{% block content %}
+<div class ="w3-container margin-b-16px">
+    <div class="col-lg-8 offset_lg_2">
+        <h2 class="w3-press-start">World Happiness</h2>
+        <iframe src="{{url_for('static', filename='WHR_2021.html')}}" name="targetframe">
+        </iframe>
+    </div>
+</div>
+
+<div class ="w3-container">
+    <h3 class="w3-press-start">Share your name and measure your happiness</h3>
+    <form method="post">
+        <p>Name</p>
+        <p><input type="text" name="nm"></p>
+        <p><input type="submit" value="Start measuring!"></p>
+    </form>
+</div>
+{% endblock %}

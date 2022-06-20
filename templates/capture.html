@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<div class ="w3-container">
+    <h2 class="w3-press-start text_center">Live Streaming</h2>
+    <img src="{{ url_for('video_feed') }}" class="center">
+</div>
+
+<div class ="w3-container">
+<!--    <h2 class="w3-press-start text_center">Happiness Test</h2>-->
+    <form action="happiness">
+        <button type="submit" class="center player1">Check your mood!</button>
+    </form>
+</div>
+{% endblock %}

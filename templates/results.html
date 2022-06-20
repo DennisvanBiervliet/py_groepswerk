@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+<h3 class="w3-press-start">Results</h3>
+<div class ="container">
+    <div class = "row">
+        <div class="col-lg-8 offset_lg_2">
+<!--            <iframe src="{{url_for('static', filename='output.html')}}" name="targetframe">-->
+            <iframe src="{{url_for('static', filename=countryfile)}}" name="targetframe">
+            </iframe>
+        </div>
+    </div>
+</div>
+<div class ="container">
+    <br>
+    <h3 class="w3-press-start">You are as happy as the average person in {{country.title()}}!</h3>
+    <h3 class="w3-press-start">Score: {{score}}</h3>
+</div>
+<div class ="container">
+    <form action="../">
+        <button type="submit" class="center player1">Retry</button>
+    </form>
+</div>
+<!--<div class ="container">-->
+<!--    <p class="smalltext">Even though this website is jokey, mental health is serious business. Did you know that-->
+<!--    depression is a common illness worldwide, with an estimated 3.8% of the population affected? Take your-->
+<!--    mental wellbeing seriously. If needed, don't hesitate to get help, you deserve it!-->
+<!--    </p>-->
+<!--</div>-->
+<div class ="container">
+    <footer>
+        <br>
+        <br>
+        <br>
+        <p class="smalltext">Even though this website is jokey, mental health is serious business. Did you know that
+        depression is a common illness worldwide, with an estimated 3.8% of the population affected? Take your
+        mental wellbeing seriously. If needed, don't hesitate to get help, you deserve it!
+        </p>
+    </footer>
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<div class ="container">
+    <h3 class="w3-press-start">Result of your happiness-test</h3>
+    <table class="tablespace">
+        <tr class="leftaligned">
+            <td>
+                <img src="{{url_for('static', filename=value)}}">
+            </td>
+            <td class="topaligned">
+                <table class="columngap">
+                    <thead>
+                        <tr>
+                            <td>Emotion</td>
+                            <td>Score</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for emotion, value in result.items() %}
+                     <tr>
+                         <td>{{emotion.title()}}</td>
+                         <td>{{value}}</td>
+                     </tr>
+                     {% endfor %}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<h3 class="w3-press-start">Who else in the world feels the same?</h3>
+<form action="results">
+    <button type="submit">Compare!</button>
+</form>
+
+{% endblock %}

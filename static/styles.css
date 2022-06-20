@@ -1,0 +1,147 @@
+p, input, label, .player1, button {
+  font-size: 36px;
+  margin: 10px 0px;
+}
+
+input[type=text], select {
+  width: 100%;
+  /*background-color: #191A19;*/
+  background-color: #191A19;
+  /*font-size: 24px;*/
+  text-align: center;
+  padding: 2px 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 4px solid #98ff98;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit], button {
+  width: 100%;
+  padding: 2px 30px;
+  margin: 8px 0;
+  color: #98ff98;
+  background-color: #191A19;
+  border: 4px solid #98ff98;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover {
+  border: 4px solid #98ff98;
+  background-color: #98ff98;
+  color: #191A19;
+}
+
+/*Fonts*/
+.w3-press-start {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1.w3-press-start {
+  margin: 20px 50px;
+  font-size: 100px;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+}
+
+/*Colors*/
+.w3-space-black-bg {
+  background-color: #191A19;;
+}
+
+.w3-moss-green {
+  color: #1E5128;
+}
+
+.w3-grass-green {
+  color: #98ff98;
+}
+
+.w3-light-green {
+  color: #D8E9A8;
+}
+
+.margin-b-16px {
+  margin-bottom: 16px;
+}
+
+#page {
+  max-height: 1000px;
+  max-width: 100%;
+  margin: 50px;
+}
+
+iframe html body {
+  margin: 0px;
+}
+
+img, iframe {
+  border: 4px solid #98ff98;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+iframe {
+  width: 70%;
+  height: 600px;
+}
+
+form {
+  margin: 18px 0px;
+}
+
+* {
+  color: #98ff98;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 600px;
+  width: auto;
+}
+
+#squatTable td:first-child {
+     width: 100%;
+}
+
+.leftaligned {
+     text-align: left;
+}
+
+.topaligned {
+  vertical-align: top;
+}
+
+
+.columngap {
+  border-spacing: 20px 5px;
+}
+
+tbody {
+  font-size: 18px;
+}
+
+thead {
+  font-weight: bold;
+}
+
+.smalltext {
+  font-size: 16px;
+}
+
+.gradientback {
+    background: linear-gradient(135deg, #191A19 0%, #511E47 35%, #4D155E 100%);
+    /*background: linear-gradient(135deg, #816797 0%, #51557E 30%, #1B2430 100%);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

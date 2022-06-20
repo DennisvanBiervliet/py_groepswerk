@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body class="w3-space-black-bg gradientback">
+    <!-- Page Container -->
+    <div id="page" class="w3-content w3-margin-top">
+        <div class="w3-container w3-center">
+            <h1 class="w3-press-start">HOW DO WE FEEL?</h1>
+        </div>
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+            {% block content %}{% endblock %}
+        </div> <!-- The Grid -->
+    </div> <!-- Page Container -->
+</body>
+</html>
